@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Finance</title>  
+        
+        <style>            
+            body {
+                background-color: #e6f7ff;
+            }
+            * {
+                box-sizing: border-box;
+            }
+                        
+            .video {
+                float: left;
+                margin-right: 10px;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: auto;
+                padding-left: 0;
+                width: 250px;
+                background-color: lightskyblue;
+            }
+            li a {
+                display: block;
+                color: white;
+                padding: 14px 15px;
+                text-decoration: none;
+                font-family: sans-serif;
+            }
+            li {
+                text-align: center;
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+            li a.active {
+                background-color: black;
+                color: white;
+            }
+            li a:hover:not(.active) {
+                background-color: darkblue;
+                color: white;
+            }
+            
+            
+            .header {
+                padding: 10px;
+                text-align: center;
+                background-color: #e6f7ff;
+            }
+            .flex-container {
+                display: flex;
+            }
+            .side {
+                flex: 1;
+                background-color: #e6f7ff;
+                border: 1px solid;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+            .main {
+                flex: 2;
+                background-color: #e6f7ff;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+            .footer {
+                background-color: #e6f7ff;
+                text-align: center;
+            }
+            .flex>div {
+                background-color: #e6f7ff;
+                text-align: center;
+                min-height: 300px;
+                margin: 2px;
+            }
+            @media only screen and (max-width: 500px) {
+                .flex-container {
+                    -webkit-flex-direction:column;
+                    flex-direction: column;
+                }
+                .flex-container>div {
+                    background-color: #e6f7ff;
+                    min-height: 400px;
+                }
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div class="header">
+            <h1>Finance</h1>
+        </div>
+            <div class="flex-container">
+            <div class="side">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a class="active" href="finance.html">Finance</a></li>
+                </ul>
+            </div>
+            <div class="main"><h2>Coronavirus: the Economic Impact - BBC News</h2><p style="text-align: left;"><iframe class="video" width="500" height="300" src="https://www.youtube.com/embed/BrDc6KpW1uo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>Financial markets plunged again on Tuesday as investors continued to worry about the spread of the coronavirus. The Dow shed almost 900 points, falling more than 3% to close at 27,081. The S&#38;P 500 also closed more than 3% lower, while the Nasdaq sank 2.8%. The declines followed drops overseas. In the UK, the FTSE 100 fell almost 2% to a 12-month low of 7,018, while Japan's Nikkei 225 index fell 3.3%. The human cost of the coronavirus outbreak is climbing across China and beyond. The economic cost is also mounting, mainly, but not only, in China. That damage is, for the most part, not due to the virus itself so much as efforts to prevent it spreading. There are strict restrictions on moving out of Wuhan, where the outbreak began, a city with a population of 11 million. The lockdown, also now extended to other parts of Hubei province, prevents business-related travel as well as the movement of goods and workers. Fear of the virus also means many people will choose to avoid activities they think might expose them to the risk of infection.</p>
+            </div>
+            <div class="side" style="margin-left: 10px"><h2>Asian shares ease from record high; oil falls on virus case surge
+            </h2><p>SYDNEY (Reuters) - Asian shares retreated from a record peak on Monday after a Reuters report the United States was preparing to impose sanctions on some Chinese officials highlighted geopolitical tensions, while oil prices fell on surging virus cases. In a signal markets elsewhere would start weaker, eurostoxx 50 futures were 0.4% down, futures for Germany’s DAX eased 0.3% while those of London’s FTSE were flat. E-Mini futures for the S&#38;P 500 slipped 0.2%. MSCI’s broadest index of Asia-Pacific shares outside Japan fell 0.1% following four straight sessions of gains. The index hit a record high of 644.3 points early on Monday. It is up about 16% so far this year, the best since a 33% jump in 2017. China’s blue-chip index dropped 0.8%, largely ignoring strong export data, while Hong Kong’s Hang Seng was down 1.7%. Japan’s Nikkei declined 0.46% while Australian shares were up 0.6%.</p>
+            </div>
+        </div>
+            <div class="footer">Date: 7/12/2020 copyright</div>
+        
+        
+        
+       </body>     
+</html>
