@@ -1,22 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>News</title>  
         
-        <style>            
-            
+        <style>           
             .grid1 {
                 grid-area: header;
             }
             .grid2 {
-                grid-area: menu; 
+                grid-area: menu; min-width: 250px;
             }
             .grid3 {
                 grid-area: main;
             }
             .grid4 {
                 grid-area: right;
+                border: 1px solid;
             }
             .grid5 {
                 grid-area: footer;
@@ -24,7 +23,7 @@
             
             .video {
                 float: left;
-                margin-right: 10px;
+                height: auto;
             }
             
             ul {
@@ -45,6 +44,7 @@
                 text-align: center;
             }
             li:last-child {
+                border-bottom: none;
             }
             li a.active {
                 background-color: black;
@@ -54,7 +54,6 @@
                 background-color: darkblue;
                 color: white;
             }
-            
             .grid-container {
                 display: grid;
                 grid-template-areas: 'header header header header header header header header'
@@ -62,24 +61,29 @@
                     'footer footer footer footer footer footer footer footer';
                 grid-gap: 2px;
                 background-color: #e6f7ff;
+                padding: 5px;
             }            
             .grid-container>div {
                 text-align: center;
-                margin: 2px;
-                border: 1px solid;
+                padding: 0 0;
+                background-color: #e6f7ff;
+                
             }
-            @media only screen and (max-width: 600px) {
+            
+            
+            
+            @media only screen and (max-width: 500px) {
                 .grid-container {
-                    grid-template-columns: 1fr;
-                    grid-auto-rows: minmax(100px, auto);
+                    display: grid;
                     grid-template-areas: 
-                        'header'
-                        'menu'
-                        'main'
-                        'right'
-                        'footer';
+                        'header header header'
+                        'menu menu menu'
+                        'main main main'
+                        'right right right'
+                        'footer footer footer';
                     grid-gap: 2px;
                     padding: 5px;
+                    background-color: #e6f7ff;
                 }
                 .grid-container>div {
                     background-color: #e6f7ff;
@@ -102,7 +106,7 @@
                     <li><a href="finance.html">Finance</a></li>
                 </ul>
             </div>
-            <div class="grid3"><h2>“Beginning of end” for pandemic as vaccine arrives in UK - BBC News</h2><p style="text-align: left;"><iframe class="video" width="450" height="300" src="https://www.youtube.com/embed/V5DRPfFNQXs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>The Medical Director of NHS England has said the mass vaccination programme for Covid-19 marks “the beginning of the end” of the pandemic.</p>        
+            <div class="grid3"><h2>“Beginning of end” for pandemic as vaccine arrives in UK - BBC News</h2><p style="text-align: left;"><iframe class="video" width="450" height="300" src="https://www.youtube.com/embed/V5DRPfFNQXs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-right: 5px;"></iframe>The Medical Director of NHS England has said the mass vaccination programme for Covid-19 marks “the beginning of the end” of the pandemic.</p>        
             
             </div>
             <div class="grid4"><h2>Brexit: UK-EU trade talks continue as 'sticking points' remain
