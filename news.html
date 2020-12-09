@@ -68,9 +68,10 @@
                 margin: 2px;
                 border: 1px solid;
             }
-            @media only screen and (max-width: 550px) {
+            @media only screen and (max-width: 600px) {
                 .grid-container {
                     grid-template-columns: 1fr;
+                    grid-auto-rows: minmax(100px, auto);
                     grid-template-areas: 
                         'header'
                         'menu'
